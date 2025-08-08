@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: testApp
-        image: crccheck/hello-world:1.0.0
+        image: crccheck/hello-world:v1.0.0
         ports:
         - containerPort: 8000

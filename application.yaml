@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: testApp-argo-application
+  name: testapp-argo-application
   namespace: argocd
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/MaksymLeus/testApp_Configuration.git
+    repoURL: https://github.com/MaksymLeus/testapp_Configuration.git
     targetRevision: HEAD
     path: dev
   destination: 
     server: https://kubernetes.default.svc
-    namespace: testApp
+    namespace: testapp
 
   syncPolicy:
     syncOptions:
